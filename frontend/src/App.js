@@ -10,12 +10,7 @@ import WorkoutsPage from './pages/WorkoutsPage';
 function App() {
 
   const {user} = useAuthContext()
-  const handleSubmit = (e) =>{
-    e.preventDefault();
-    axios.post('https://3095-project.vercel.app/register',{email, password})
-    .then(result => console..log(result))
-    .catch(err => console.log(err))
-  }
+
 
   return (
     <div className="App">
